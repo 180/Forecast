@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E100B491AE41AA3000C5F61 /* Forecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E100B481AE41AA3000C5F61 /* Forecast.m */; };
+		4E100B4E1AE42664000C5F61 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E100B4D1AE42664000C5F61 /* CoreLocation.framework */; };
 		4EF6EC0D1AE3E14D00E77A09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6EC0C1AE3E14D00E77A09 /* main.m */; };
 		4EF6EC101AE3E14D00E77A09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6EC0F1AE3E14D00E77A09 /* AppDelegate.m */; };
 		4EF6EC181AE3E14D00E77A09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF6EC171AE3E14D00E77A09 /* Images.xcassets */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		4E100B471AE41AA3000C5F61 /* Forecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Forecast.h; sourceTree = "<group>"; };
 		4E100B481AE41AA3000C5F61 /* Forecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Forecast.m; sourceTree = "<group>"; };
+		4E100B4D1AE42664000C5F61 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4EF6EC071AE3E14D00E77A09 /* Forecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF6EC0B1AE3E14D00E77A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EF6EC0C1AE3E14D00E77A09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E100B4E1AE42664000C5F61 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,7 @@
 		4EF6EBFE1AE3E14D00E77A09 = {
 			isa = PBXGroup;
 			children = (
+				4E100B4D1AE42664000C5F61 /* CoreLocation.framework */,
 				4EF6EC091AE3E14D00E77A09 /* Forecast */,
 				4EF6EC231AE3E14D00E77A09 /* ForecastTests */,
 				4EF6EC081AE3E14D00E77A09 /* Products */,
@@ -92,21 +96,21 @@
 		4EF6EC091AE3E14D00E77A09 /* Forecast */ = {
 			isa = PBXGroup;
 			children = (
-				4EF6EC301AE3E19D00E77A09 /* ForecastTableViewController.h */,
-				4EF6EC3A1AE418CE00E77A09 /* YahooWeatherHelper.h */,
-				4EF6EC3B1AE418CE00E77A09 /* YahooWeatherHelper.m */,
-				4EF6EC351AE3F11F00E77A09 /* WeatherCell.h */,
-				4E100B471AE41AA3000C5F61 /* Forecast.h */,
-				4E100B481AE41AA3000C5F61 /* Forecast.m */,
-				4EF6EC361AE3F11F00E77A09 /* WeatherCell.m */,
-				4EF6EC371AE3F11F00E77A09 /* WeatherCell.xib */,
-				4EF6EC311AE3E19D00E77A09 /* ForecastTableViewController.m */,
-				4EF6EC321AE3E19D00E77A09 /* ForecastTableViewController.xib */,
 				4EF6EC0E1AE3E14D00E77A09 /* AppDelegate.h */,
 				4EF6EC0F1AE3E14D00E77A09 /* AppDelegate.m */,
+				4E100B471AE41AA3000C5F61 /* Forecast.h */,
+				4E100B481AE41AA3000C5F61 /* Forecast.m */,
+				4EF6EC301AE3E19D00E77A09 /* ForecastTableViewController.h */,
+				4EF6EC311AE3E19D00E77A09 /* ForecastTableViewController.m */,
+				4EF6EC321AE3E19D00E77A09 /* ForecastTableViewController.xib */,
 				4EF6EC171AE3E14D00E77A09 /* Images.xcassets */,
 				4EF6EC191AE3E14D00E77A09 /* LaunchScreen.xib */,
 				4EF6EC0A1AE3E14D00E77A09 /* Supporting Files */,
+				4EF6EC351AE3F11F00E77A09 /* WeatherCell.h */,
+				4EF6EC361AE3F11F00E77A09 /* WeatherCell.m */,
+				4EF6EC371AE3F11F00E77A09 /* WeatherCell.xib */,
+				4EF6EC3A1AE418CE00E77A09 /* YahooWeatherHelper.h */,
+				4EF6EC3B1AE418CE00E77A09 /* YahooWeatherHelper.m */,
 			);
 			path = Forecast;
 			sourceTree = "<group>";

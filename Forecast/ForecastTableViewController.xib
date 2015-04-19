@@ -2,10 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForecastTableViewController">
             <connections>
+                <outlet property="cityNameLabel" destination="3np-sf-PRG" id="wdC-d4-opw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +20,51 @@
             <view key="tableHeaderView" contentMode="scaleToFill" id="mtX-hS-nU0">
                 <rect key="frame" x="0.0" y="0.0" width="600" height="156"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc0-Iw-MC8">
+                        <rect key="frame" x="228" y="51" width="145" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="145" id="bwr-kk-DrN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="41"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKm-AL-beH">
+                        <rect key="frame" x="539" y="118" width="53" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="OpF-bq-kpO"/>
+                            <constraint firstAttribute="height" constant="30" id="jfB-33-D3Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <state key="normal" title="Refresh">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="refreshButtonTapped:" destination="-1" eventType="touchUpInside" id="mC0-QW-zwg"/>
+                        </connections>
+                    </button>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long City Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3np-sf-PRG">
+                        <rect key="frame" x="8" y="117" width="147" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="jqS-Ag-n9V"/>
+                            <constraint firstAttribute="width" constant="147" id="ocC-dX-HFu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                        <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="3np-sf-PRG" firstAttribute="leading" secondItem="mtX-hS-nU0" secondAttribute="leadingMargin" id="0sZ-jZ-w6b"/>
+                    <constraint firstItem="CKm-AL-beH" firstAttribute="trailing" secondItem="mtX-hS-nU0" secondAttribute="trailingMargin" id="1yB-US-usR"/>
+                    <constraint firstItem="dc0-Iw-MC8" firstAttribute="top" secondItem="mtX-hS-nU0" secondAttribute="top" constant="51" id="Moo-vb-XIB"/>
+                    <constraint firstItem="3np-sf-PRG" firstAttribute="baseline" secondItem="CKm-AL-beH" secondAttribute="baseline" id="UDH-Lp-IXB"/>
+                    <constraint firstAttribute="bottom" secondItem="dc0-Iw-MC8" secondAttribute="bottom" constant="52" id="VFt-BB-KAs"/>
+                    <constraint firstItem="dc0-Iw-MC8" firstAttribute="centerX" secondItem="mtX-hS-nU0" secondAttribute="centerX" id="VH0-kD-Wac"/>
+                    <constraint firstItem="CKm-AL-beH" firstAttribute="bottom" secondItem="mtX-hS-nU0" secondAttribute="bottomMargin" id="x2y-oz-nme"/>
+                </constraints>
             </view>
             <view key="tableFooterView" contentMode="scaleToFill" id="qOe-2o-9iA">
                 <rect key="frame" x="0.0" y="556" width="600" height="1"/>
@@ -29,12 +75,13 @@
                 <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
                 <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
             </connections>
+            <point key="canvasLocation" x="403" y="-62"/>
         </tableView>
         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p7Q-KW-fnh">
             <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="highlightedColor"/>
         </label>
     </objects>

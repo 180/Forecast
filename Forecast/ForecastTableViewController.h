@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ForecastTableViewController : UITableViewController
+@interface ForecastTableViewController : UITableViewController <CLLocationManagerDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *cityNameLabel;
+
+- (IBAction)refreshButtonTapped:(UIButton *)sender;
 @end

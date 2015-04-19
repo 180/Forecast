@@ -10,6 +10,6 @@
 
 @interface YahooWeatherHelper : NSObject
 
-+ (NSArray *)getForecast;
++ (NSArray *)getForecastForCity:(NSString *)city;
 
 @end
