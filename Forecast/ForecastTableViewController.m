@@ -7,7 +7,9 @@
 //
 
 #import "ForecastTableViewController.h"
+#import "Forecast.h"
 #import "WeatherCell.h"
+#import "YahooWeatherHelper.h"
 
 NSString *const ForecastTableViewCellReuseIdentifier = @"WeatherCell";
 
@@ -22,7 +24,7 @@ NSString *const ForecastTableViewCellReuseIdentifier = @"WeatherCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _forecasts = [[NSArray alloc] initWithObjects:@"20",@"30",@"-15",@"0",nil];
+    _forecasts = [YahooWeatherHelper getForecast];
     
     UINib *weatherCellNib = [UINib nibWithNibName:NSStringFromClass([WeatherCell class]) bundle:nil];
     [self.tableView registerNib:weatherCellNib forCellReuseIdentifier:ForecastTableViewCellReuseIdentifier];
@@ -43,12 +45,13 @@ NSString *const ForecastTableViewCellReuseIdentifier = @"WeatherCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    Forecast *forecast = [_forecasts objectAtIndex:indexPath.row];
     WeatherCell *cell = [tableView dequeueReusableCellWithIdentifier:ForecastTableViewCellReuseIdentifier forIndexPath:indexPath];
     
-    [cell.tempHiLabel setText:[NSString stringWithFormat:@"%@°C", [_forecasts objectAtIndex:indexPath.row]]];
-    [cell.dateLabel setText:@"12/04/2015"];
-    [cell.dayLabel setText:@"Monday"];
-    [cell.weatherTextLabel setText:@"Sunny"];
+    [cell.dateLabel setText:forecast.date];
+    [cell.dayLabel setText:forecast.day];
+    [cell.tempHiLabel setText:[NSString stringWithFormat:@"%d°C", forecast.high]];
+    [cell.weatherTextLabel setText:forecast.text];
     
     return cell;
 }
