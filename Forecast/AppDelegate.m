@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ForecastTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    ForecastTableViewController *forecastVC = [[ForecastTableViewController alloc] initWithNibName:@"ForecastTableViewController" bundle:nil];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = forecastVC;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

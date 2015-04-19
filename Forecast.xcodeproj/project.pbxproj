@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		4EF6EC0D1AE3E14D00E77A09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6EC0C1AE3E14D00E77A09 /* main.m */; };
 		4EF6EC101AE3E14D00E77A09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6EC0F1AE3E14D00E77A09 /* AppDelegate.m */; };
-		4EF6EC131AE3E14D00E77A09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6EC121AE3E14D00E77A09 /* ViewController.m */; };
-		4EF6EC161AE3E14D00E77A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF6EC141AE3E14D00E77A09 /* Main.storyboard */; };
 		4EF6EC181AE3E14D00E77A09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF6EC171AE3E14D00E77A09 /* Images.xcassets */; };
 		4EF6EC1B1AE3E14D00E77A09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EF6EC191AE3E14D00E77A09 /* LaunchScreen.xib */; };
 		4EF6EC271AE3E14D00E77A09 /* ForecastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6EC261AE3E14D00E77A09 /* ForecastTests.m */; };
+		4EF6EC331AE3E19D00E77A09 /* ForecastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6EC311AE3E19D00E77A09 /* ForecastTableViewController.m */; };
+		4EF6EC341AE3E19D00E77A09 /* ForecastTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EF6EC321AE3E19D00E77A09 /* ForecastTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		4EF6EC0C1AE3E14D00E77A09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4EF6EC0E1AE3E14D00E77A09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4EF6EC0F1AE3E14D00E77A09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4EF6EC111AE3E14D00E77A09 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4EF6EC121AE3E14D00E77A09 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4EF6EC151AE3E14D00E77A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EF6EC171AE3E14D00E77A09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4EF6EC1A1AE3E14D00E77A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4EF6EC201AE3E14D00E77A09 /* ForecastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF6EC251AE3E14D00E77A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EF6EC261AE3E14D00E77A09 /* ForecastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastTests.m; sourceTree = "<group>"; };
+		4EF6EC301AE3E19D00E77A09 /* ForecastTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastTableViewController.h; sourceTree = "<group>"; };
+		4EF6EC311AE3E19D00E77A09 /* ForecastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastTableViewController.m; sourceTree = "<group>"; };
+		4EF6EC321AE3E19D00E77A09 /* ForecastTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +81,11 @@
 		4EF6EC091AE3E14D00E77A09 /* Forecast */ = {
 			isa = PBXGroup;
 			children = (
+				4EF6EC301AE3E19D00E77A09 /* ForecastTableViewController.h */,
+				4EF6EC311AE3E19D00E77A09 /* ForecastTableViewController.m */,
+				4EF6EC321AE3E19D00E77A09 /* ForecastTableViewController.xib */,
 				4EF6EC0E1AE3E14D00E77A09 /* AppDelegate.h */,
 				4EF6EC0F1AE3E14D00E77A09 /* AppDelegate.m */,
-				4EF6EC111AE3E14D00E77A09 /* ViewController.h */,
-				4EF6EC121AE3E14D00E77A09 /* ViewController.m */,
-				4EF6EC141AE3E14D00E77A09 /* Main.storyboard */,
 				4EF6EC171AE3E14D00E77A09 /* Images.xcassets */,
 				4EF6EC191AE3E14D00E77A09 /* LaunchScreen.xib */,
 				4EF6EC0A1AE3E14D00E77A09 /* Supporting Files */,
@@ -199,8 +199,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF6EC161AE3E14D00E77A09 /* Main.storyboard in Resources */,
 				4EF6EC1B1AE3E14D00E77A09 /* LaunchScreen.xib in Resources */,
+				4EF6EC341AE3E19D00E77A09 /* ForecastTableViewController.xib in Resources */,
 				4EF6EC181AE3E14D00E77A09 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF6EC131AE3E14D00E77A09 /* ViewController.m in Sources */,
 				4EF6EC101AE3E14D00E77A09 /* AppDelegate.m in Sources */,
 				4EF6EC0D1AE3E14D00E77A09 /* main.m in Sources */,
+				4EF6EC331AE3E19D00E77A09 /* ForecastTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4EF6EC141AE3E14D00E77A09 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4EF6EC151AE3E14D00E77A09 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4EF6EC191AE3E14D00E77A09 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,6 +404,7 @@
 				4EF6EC2C1AE3E14D00E77A09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EF6EC2D1AE3E14D00E77A09 /* Build configuration list for PBXNativeTarget "ForecastTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +413,7 @@
 				4EF6EC2F1AE3E14D00E77A09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

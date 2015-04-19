@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ForecastTableViewController.h
 //  Forecast
 //
 //  Created by Maciej Stanik on 19/04/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ForecastTableViewController : UITableViewController
 
 @end
-
