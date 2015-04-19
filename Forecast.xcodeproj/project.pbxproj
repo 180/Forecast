@@ -14,6 +14,8 @@
 		4EF6EC271AE3E14D00E77A09 /* ForecastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6EC261AE3E14D00E77A09 /* ForecastTests.m */; };
 		4EF6EC331AE3E19D00E77A09 /* ForecastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6EC311AE3E19D00E77A09 /* ForecastTableViewController.m */; };
 		4EF6EC341AE3E19D00E77A09 /* ForecastTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EF6EC321AE3E19D00E77A09 /* ForecastTableViewController.xib */; };
+		4EF6EC381AE3F11F00E77A09 /* WeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6EC361AE3F11F00E77A09 /* WeatherCell.m */; };
+		4EF6EC391AE3F11F00E77A09 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EF6EC371AE3F11F00E77A09 /* WeatherCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		4EF6EC301AE3E19D00E77A09 /* ForecastTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastTableViewController.h; sourceTree = "<group>"; };
 		4EF6EC311AE3E19D00E77A09 /* ForecastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastTableViewController.m; sourceTree = "<group>"; };
 		4EF6EC321AE3E19D00E77A09 /* ForecastTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastTableViewController.xib; sourceTree = "<group>"; };
+		4EF6EC351AE3F11F00E77A09 /* WeatherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherCell.h; sourceTree = "<group>"; };
+		4EF6EC361AE3F11F00E77A09 /* WeatherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherCell.m; sourceTree = "<group>"; };
+		4EF6EC371AE3F11F00E77A09 /* WeatherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				4EF6EC301AE3E19D00E77A09 /* ForecastTableViewController.h */,
+				4EF6EC351AE3F11F00E77A09 /* WeatherCell.h */,
+				4EF6EC361AE3F11F00E77A09 /* WeatherCell.m */,
+				4EF6EC371AE3F11F00E77A09 /* WeatherCell.xib */,
 				4EF6EC311AE3E19D00E77A09 /* ForecastTableViewController.m */,
 				4EF6EC321AE3E19D00E77A09 /* ForecastTableViewController.xib */,
 				4EF6EC0E1AE3E14D00E77A09 /* AppDelegate.h */,
@@ -199,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF6EC391AE3F11F00E77A09 /* WeatherCell.xib in Resources */,
 				4EF6EC1B1AE3E14D00E77A09 /* LaunchScreen.xib in Resources */,
 				4EF6EC341AE3E19D00E77A09 /* ForecastTableViewController.xib in Resources */,
 				4EF6EC181AE3E14D00E77A09 /* Images.xcassets in Resources */,
@@ -219,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF6EC381AE3F11F00E77A09 /* WeatherCell.m in Sources */,
 				4EF6EC101AE3E14D00E77A09 /* AppDelegate.m in Sources */,
 				4EF6EC0D1AE3E14D00E77A09 /* main.m in Sources */,
 				4EF6EC331AE3E19D00E77A09 /* ForecastTableViewController.m in Sources */,
