@@ -10,6 +10,7 @@
 
 @interface WeatherCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *tempLoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tempHiLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dayLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;

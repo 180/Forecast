@@ -54,6 +54,7 @@ NSString *const ForecastTableViewCellReuseIdentifier = @"WeatherCell";
     
     [cell.dateLabel setText:forecast.date];
     [cell.dayLabel setText:forecast.day];
+    [cell.tempLoLabel setText:[NSString stringWithFormat:@"%d°C", forecast.low]];
     [cell.tempHiLabel setText:[NSString stringWithFormat:@"%d°C", forecast.high]];
     [cell.weatherTextLabel setText:forecast.text];
     
