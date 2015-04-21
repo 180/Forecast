@@ -32,6 +32,7 @@ NSString *const ForecastTableViewCellReuseIdentifier = @"WeatherCell";
     
     UINib *weatherCellNib = [UINib nibWithNibName:NSStringFromClass([WeatherCell class]) bundle:nil];
     [self.tableView registerNib:weatherCellNib forCellReuseIdentifier:ForecastTableViewCellReuseIdentifier];
+    self.tableView.allowsSelection = NO;
 }
 
 - (void)didReceiveMemoryWarning {
